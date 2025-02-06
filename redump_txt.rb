@@ -3,9 +3,9 @@ require 'open-uri'
 require 'date'
 
 base_url = "http://redump.org/discs/system/ps3/"
+games = []
 
-(3..10).each do |page|
-  games = []
+(1..9).each do |page|
   url = "#{base_url}?page=#{page}"
   puts "Fetching data from: #{url}"
   chunk = page
@@ -51,12 +51,16 @@ base_url = "http://redump.org/discs/system/ps3/"
              when "Germany" ; "GE"
              when "France" ; "FR"
              when "Europe, Australia" ; "EA"
+             when "Austria, Switzerland" ; "AW"
+             when "Europe, Asia" ; "EB"
              when "Australia, New Zealand" ; "AN"
              when "New Zealand" ; "NZ"
              when "Australia" ; "AU"
              when "Poland" ; "PL"
              when "Russia" ; "RU"
              when "Ireland" ; "IR"
+             when "Turkey" ; "TR"
+             when "World" ; "WO"
              when "Belgium, Netherlands" ; "BN"
              when "China" ; "CN"
              when "India" ; "IN"
@@ -68,6 +72,8 @@ base_url = "http://redump.org/discs/system/ps3/"
              when "Finland" ; "FI"
              when "Switzerland" ; "CH"
              when "UK, Australia" ; "UA"
+             when "USA, Asia" ; "UC"
+             when "USA, Korea" ; "UG"
              when "UK" ; "UK"
              when "Netherlands" ; "NL"
              when "Sweden" ; "SW"
@@ -82,53 +88,16 @@ base_url = "http://redump.org/discs/system/ps3/"
              else columns[0].css("img").attr("title").text.strip
       end
       code   = columns[6].text.strip.gsub(" …", "").gsub(" ", "-")
-      puts "#{page.to_s.rjust(3, '0')} : #{region} : #{code} : #{rel} : #{name}"
+      puts "#{page} · #{region} · #{code} · #{name}"
       games << { region: region, page: page.to_s.rjust(3, '0'), code: code, name: name, rel: rel }
    end
 
-html_template = <<~HTML
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>PS3 Game List</title>
-      <style>
-          table {
-              width: 100%;
-              border-collapse: collapse;
-          }
-          th, td {
-              border: 1px solid #ddd;
-              padding: 8px;
-              text-align: left;
-          }
-          th {
-              background-color: #f2f2f2;
-          }
-      </style>
-  </head>
-  <body>
-      <h1>PS3 Game List</h1>
-      <table>
-          <thead>
-              <tr>
-                  <th width=1>Page</th>
-                  <th width=1>Region</th>
-                  <th width=10%>Release</th>
-                  <th width=10%>Code</th>
-                  <th>Name</th>
-              </tr>
-          </thead>
-          <tbody>
-              #{games.map { |game| "<tr><td>#{chunk}</td><td>#{game[:region]}</td><td>#{game[:rel]}</td><td>#{game[:code]}</td><td>#{game[:name]}</td></tr>" }.join("\n")}
-          </tbody>
-      </table>
-  </body>
-  </html>
-HTML
-
-File.write("ps3_games_#{chunk}.html", html_template)
-puts "HTML file generated \"ps3_games_#{chunk}.html\"."
 
 end
+
+html_template = <<~TXT
+ #{games.map { |game| "#{game[:region]} · #{game[:code]} · #{game[:name]}" }.join("\n") }
+TXT
+
+File.write("PS3-BD.txt", html_template)
+puts "HTML file generated \"PS3-BD.txt\"."
