@@ -74,6 +74,7 @@ games = []
              when "UK, Australia" ; "UA"
              when "USA, Asia" ; "UC"
              when "USA, Korea" ; "UG"
+             when "USA, Japan" ; "UJ"
              when "UK" ; "UK"
              when "Netherlands" ; "NL"
              when "Sweden" ; "SW"
