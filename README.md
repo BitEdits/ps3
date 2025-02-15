@@ -152,3 +152,140 @@ PS3 здобула культовий статус серед науковців
 * PSN
 * PSN Commerce
 * PSP
+
+# PUP/PKG packing/unpacking for 3.55
+
+PS3UPDAT.PUP:
+
+```
+dots.txt
+fix_tar
+license.xml
+ps3swu.self
+update_files.tar
+update_flags.txt
+version.txt
+vsh.tar
+```
+
+update_files.tar:
+
+```
+BDIT_FIRMWARE_PACKAGE.pkg
+BDPT_FIRMWARE_PACKAGE_301R.pkg
+BDPT_FIRMWARE_PACKAGE_302R.pkg
+BDPT_FIRMWARE_PACKAGE_303R.pkg
+BDPT_FIRMWARE_PACKAGE_304R.pkg
+BDPT_FIRMWARE_PACKAGE_306R.pkg
+BDPT_FIRMWARE_PACKAGE_308R.pkg
+BLUETOOTH_FIRMWARE.pkg
+CORE_OS_PACKAGE.pkg
+MULTI_CARD_FIRMWARE.pkg
+RL_FOR_PACKAGE.img
+RL_FOR_PROGRAM.img
+SYS_CON_FIRMWARE_01000006.pkg
+SYS_CON_FIRMWARE_01010303.pkg
+SYS_CON_FIRMWARE_01020302.pkg
+SYS_CON_FIRMWARE_01030302.pkg
+SYS_CON_FIRMWARE_01040402.pkg
+SYS_CON_FIRMWARE_01050002.pkg
+SYS_CON_FIRMWARE_01050101.pkg
+SYS_CON_FIRMWARE_S1_00010002083E0832.pkg
+UPL.xml.pkg
+dev_flash3_022.tar.aa.2010_11_27_051800
+dev_flash_000.tar.aa.2010_11_27_051337
+dev_flash_001.tar.aa.2010_11_27_051337
+dev_flash_002.tar.aa.2010_11_27_051337
+dev_flash_003.tar.aa.2010_11_27_051337
+dev_flash_004.tar.aa.2010_11_27_051337
+dev_flash_005.tar.aa.2010_11_27_051337
+dev_flash_006.tar.aa.2010_11_27_051337
+dev_flash_007.tar.aa.2010_11_27_051337
+dev_flash_008.tar.aa.2010_11_27_051337
+dev_flash_009.tar.aa.2010_11_27_051337
+dev_flash_010.tar.aa.2010_11_27_051337
+dev_flash_011.tar.aa.2010_11_27_051337
+dev_flash_012.tar.aa.2010_11_27_051337
+dev_flash_013.tar.aa.2010_11_27_051337
+dev_flash_014.tar.aa.2010_11_27_051337
+dev_flash_015.tar.aa.2010_11_27_051337
+dev_flash_016.tar.aa.2010_11_27_051337
+dev_flash_017.tar.aa.2010_11_27_051337
+dev_flash_018.tar.aa.2010_11_27_051337
+dev_flash_019.tar.aa.2010_11_27_051337
+dev_flash_020.tar.aa.2010_11_27_051337
+dev_flash_021.tar.aa.2010_11_27_051337
+```
+
+CORE_OS_PACKAGE.pkg:
+
+```
+aim_spu_module.self
+appldr
+creserved_0
+default.spp
+emer_init.self
+eurus_fw.bin
+hdd_copy.self
+isoldr
+lv0
+lv1.self
+lv1ldr
+lv2_kernel.self
+lv2ldr
+manu_info_spu_module.self
+mc_iso_spu_module.self
+me_iso_spu_module.self
+sb_iso_spu_module.self
+sc_iso.self
+sdk_version
+spp_verifier.self
+spu_pkg_rvk_verifier.self
+spu_token_processor.self
+spu_utoken_processor.self
+sv_iso_spu_module.self
+```
+
+How to extract ELF:
+
+```sh
+pup x PS3UPDAT.PUP 3.55
+unpkg -s 3.55/CORE_OS_PACKAGE.pkg temp
+cosunpkg temp CORE_OS_PACKAGE.Content
+unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
+```
+
+# Homebrew 3.55
+
+Існує два можливі способи для homebrew під PS3 CFW (Custom Firmware, повністю перезібрані PUP файли підписані ключами 3.55)
+і HFW (Hybrid Firmware, оригінальні, незначно пропатчені PUP). Основні вимоги для CFW наступні:
+
+* PS3 яка з заводу мала прошивку 3.55, або менше (критерій);
+* Модифікований образ CFW PUP файлу на USB носії FAT32.
+
+Якшо моделі не були випущені пізніше 3.55 (Slim і Super Slim моделі), то на такі
+консолі можна поставили лише HFW + HEN образи.
+
+Тип | Rebug CFW | HFW
+====|===========|======
+Застосовуваність|Моделі з 3.55|Будь-які
+Homebrew|Повна|HEN
+Backup|Повна (ISO/PKG)|Обмежена (HEN)
+DEX|CEX/DEX переключення|CEX
+Cobra|Так|HEN
+Ban|Малоймовірно|Високоймовірно
+Простота|Складно|Простіше
+Остання версія|4.86|4.90
+
+Основні переваги CFW (Rebug):
+
+* Підтрика DEX функцій
+* Підтрика розширений дороблених емуляторів PS2 і PS1
+* Підтрика BD в UDF форматі або у вигляді каталогів
+* Відключення певних OS API syscalls
+* Підтримка бекапа ігор і системи
+
+Останні версії CWF (Rebug):
+
+* Rebug 4.86.1 LITE для ретейл PS3 (CEX)
+* Rebug 4.86.1 REX/D-REX для DevKit (CEX/DEX)
