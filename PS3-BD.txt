@@ -1182,7 +1182,6 @@ US · BLUS-30703 · Dynasty Warriors: Gundam 3
 EU · BLES-02057 · Dynasty Warriors: Gundam Reborn
 EU · BLES-00825 · Dynasty Warriors: Strikeforce
 US · BLUS-30471 · Dynasty Warriors: Strikeforce
-
 JP · BLJM-60528 · E.X. Troopers
 EU · BLES-00965 · EA Sports Active 2: Personal Trainer
 US · BLUS-30572 · EA Sports Active 2: Personal Trainer
@@ -1690,7 +1689,6 @@ US · BLUD-90010 · Guitar Hero: Smash Hits: May 2.76 IDU Update
 EA · BLES-00578 · Guitar Hero: Van Halen
 US · BLUS-30291 · Guitar Hero: Van Halen
 US · BLUS-30460 · Guitar Hero: Van Halen
-AU · 001151AU · Guitar Hero: Warriors of Rock
 EA · BLES-00801 · Guitar Hero: Warriors of Rock
 US · BLUS-30487 · Guitar Hero: Warriors of Rock
 JP · BLJS-10197 · Gundam Breaker
@@ -1742,7 +1740,6 @@ JP · BLJS-10019 · Haze
 RU · BLES-00169 · Haze
 US · BLUS-30094 · Haze
 JP · BLJM-60545 · Heartful Simulator Pachi-Slot: ToHeart 2
-EU · BCES---000 · Heavenly Sword
 JP · BCJS-30016 · Heavenly Sword
 KR · BCKS-10010 · Heavenly Sword
 US · BCUS-98132 · Heavenly Sword
@@ -2172,7 +2169,7 @@ EU · BLES-02197 · Lost Dimension
 JP · BLJM-61166 · Lost Dimension
 US · BLUS-31554 · Lost Dimension
 AS · BCAS-20319 · Lost in the Rain
-Japan, Europe · BLAS-50173 · Lost Planet 2
+JE · BLAS-50173 · Lost Planet 2
 US · BLUS-30434 · Lost Planet 2
 EU · BLES-01685 · Lost Planet 3
 JP · BLJM-60490 · Lost Planet 3
@@ -2234,7 +2231,7 @@ JP · BLJS-10149 · Mahjong Dream C Club
 JP · BLJM-60145 · Mahjong Fight Club: Zenkoku Taisenban
 JP · BLJM-61030 · Mahjong Haou: Dankyuu Battle 3
 JP · BLJM-60011 · Mahjong Taikai IV
-JP · BLJM60430 · Maji de Watashi ni Koi Shinasai!! R
+JP · BLJM-60430 · Maji de Watashi ni Koi Shinasai!! R
 EU · BLES-00919 · Majin and the Forsaken Kingdom
 UG · BLKS-20244 · Majin and the Forsaken Kingdom
 JP · BLJS-10098 · Majin to Ushinawareta Oukoku
@@ -2586,9 +2583,9 @@ EU · BLES-02191 · NBA 2K16
 JP · BLJS-10322 · NBA 2K16
 US · BLUS-31542 · NBA 2K16
 EU · BLES-02242 · NBA 2K17
-USA, Japan · BLJS-10337 · NBA 2K17
+UJ · BLJS-10337 · NBA 2K17
 EU · BLES-02255 · NBA 2K18
-USA, Japan · BLJS-20001 · NBA 2K18
+UJ · BLJS-20001 · NBA 2K18
 EU · BLES-00025 · NBA 2K7
 US · BLUS-30004 · NBA 2K7
 EU · BLES-00138 · NBA 2K8
