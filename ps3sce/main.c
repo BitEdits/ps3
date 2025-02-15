@@ -71,7 +71,7 @@ char *compress_value = NULL;
 char *np_add_sig_value = NULL;
 
 static void show_version(void) {
-  printf("OpenSCETool " OSCETOOL_VERSION " (C) 2013\n");
+  printf("ps3sce Tool " OSCETOOL_VERSION " (C) 2013\n");
   printf("Based on scetool (C) 2011-2012 by naehrwert\n");
   printf("NP local license handling (C) 2012 by flatz\n");
 }
