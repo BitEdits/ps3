@@ -92,7 +92,7 @@ PS3 здобула культовий статус серед науковців
 │   ├── OpenCL_Guide.pdf
 │   └── SDK-Installation_Guide_v3.1.pdf
 └── Synergistic Processing Unit
-    ├── Preventing SPE Indefinite Stalls Resulting from Instruction Depletion in Cell Processor v1.0.pdf
+    ├── Preventing SPE Indefinite Stalls Resulting from Instruction Depletion v1.0.pdf
     ├── SPU Application Binary Interface Specification v1.6.pdf
     ├── SPU Application Binary Interface Specification v1.9.pdf
     ├── SPU Assembly Language Specification v1.4.pdf
