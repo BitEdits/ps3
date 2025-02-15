@@ -266,7 +266,7 @@ unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
 Якшо моделі не були випущені пізніше 3.55 (Slim і Super Slim моделі), то на такі
 консолі можна поставили лише HFW + HEN образи.
 
-Тип | CFW | HFW
+Функція | CFW | HFW
 --- | --- | ---
 Застосовуваність|Моделі з 3.55|Будь-які
 Homebrew|Повна|HEN
