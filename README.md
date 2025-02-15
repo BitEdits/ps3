@@ -255,7 +255,7 @@ cosunpkg temp CORE_OS_PACKAGE.Content
 unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
 ```
 
-# Homebrew 3.55
+# Homebrew Rebug CWF 3.55
 
 Існує два можливі способи для homebrew під PS3 CFW (Custom Firmware, повністю перезібрані PUP файли підписані ключами 3.55)
 і HFW (Hybrid Firmware, оригінальні, незначно пропатчені PUP). Основні вимоги для CFW наступні:
