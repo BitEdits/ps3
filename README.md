@@ -281,13 +281,20 @@ spu_utoken_processor.self
 sv_iso_spu_module.self
 ```
 
-How to extract ELF from PKG from PUP:
+How to extract ELF from PKG from PUP using ps3tools:
 
 ```sh
 pup x PS3UPDAT.PUP 3.55
 unpkg -s 3.55/CORE_OS_PACKAGE.pkg temp
 cosunpkg temp CORE_OS_PACKAGE.Content
 unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
+```
+
+or simply:
+
+```
+ ./core_os_extractor.sh PS3UPDAT.PUP
+ ./dev_flash_extractor_linux.sh PS3UPDAT.PUP flash
 ```
 
 How to pack ELF into PKG into PUP:
