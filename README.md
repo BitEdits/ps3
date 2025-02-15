@@ -1,5 +1,5 @@
-PS3 BitEdits
-============
+PS3 Bit Edits
+=============
 
 PlayStation 3 Hacking Memorandum by Bit Edits.
 
