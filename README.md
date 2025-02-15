@@ -13,8 +13,8 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 * RSX Driver for X.org
 * OpenGL driver for RSX
 * BD Ripping
-* PUP/PKG packing/unpacking
-* Homebrew Games
+* PUP/PKG packing/unpacking for 3.55
+* Homebrew Games for 3.55
 
 # Intro
 
