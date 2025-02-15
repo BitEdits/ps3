@@ -267,7 +267,7 @@ unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
 консолі можна поставили лише HFW + HEN образи.
 
 Тип | Rebug CFW | HFW
-====|===========|======
+--- | --------- | ---
 Застосовуваність|Моделі з 3.55|Будь-які
 Homebrew|Повна|HEN
 Backup|Повна (ISO/PKG)|Обмежена (HEN)
