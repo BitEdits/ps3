@@ -13,8 +13,8 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 * RSX Driver for X.org
 * OpenGL driver for RSX
 * BD Ripping
+* Homebrew Rebug CFW 3.55
 * PUP/PKG packing/unpacking for 3.55
-* Homebrew Games for 3.55
 
 # Intro
 
@@ -153,6 +153,41 @@ PS3 здобула культовий статус серед науковців
 * PSN Commerce
 * PSP
 
+# Homebrew Rebug CWF 3.55
+
+Існує два можливі способи для homebrew під PS3 CFW (Custom Firmware, повністю перезібрані PUP файли підписані ключами 3.55)
+і HFW (Hybrid Firmware, оригінальні, незначно пропатчені PUP). Основні вимоги для CFW наступні:
+
+* PS3 яка з заводу мала прошивку 3.55, або менше (критерій);
+* Модифікований образ CFW PUP файлу на USB носії FAT32.
+
+Якшо моделі не були випущені пізніше 3.55 (Slim і Super Slim моделі), то на такі
+консолі можна поставили лише HFW + HEN образи.
+
+Функція | CFW | HFW
+--- | --- | ---
+Застосовуваність|Моделі з 3.55|Будь-які
+Homebrew|Повна|HEN
+Backup|Повна (ISO/PKG)|Обмежена (HEN)
+DEX|CEX/DEX переключення|CEX
+Cobra|Так|HEN
+Ban|Малоймовірно|Високоймовірно
+Простота|Складно|Простіше
+Остання версія|4.86|4.90
+
+Основні переваги CFW (Rebug):
+
+* Підтрика DEX функцій
+* Підтрика розширений дороблених емуляторів PS2 і PS1
+* Підтрика BD в UDF форматі або у вигляді каталогів
+* Відключення певних OS API syscalls
+* Підтримка бекапа ігор і системи
+
+Останні версії CWF (Rebug):
+
+* Rebug 4.86.1 LITE для ретейл PS3 (CEX)
+* Rebug 4.86.1 REX/D-REX для DevKit (CEX/DEX)
+
 # PUP/PKG packing/unpacking for 3.55
 
 PS3UPDAT.PUP:
@@ -246,7 +281,7 @@ spu_utoken_processor.self
 sv_iso_spu_module.self
 ```
 
-How to extract ELF:
+How to extract ELF from PKG from PUP:
 
 ```sh
 pup x PS3UPDAT.PUP 3.55
@@ -255,37 +290,4 @@ cosunpkg temp CORE_OS_PACKAGE.Content
 unself CORE_OS_PACKAGE.Content/lv2_kernel.self lv2_kernel.elf
 ```
 
-# Homebrew Rebug CWF 3.55
-
-Існує два можливі способи для homebrew під PS3 CFW (Custom Firmware, повністю перезібрані PUP файли підписані ключами 3.55)
-і HFW (Hybrid Firmware, оригінальні, незначно пропатчені PUP). Основні вимоги для CFW наступні:
-
-* PS3 яка з заводу мала прошивку 3.55, або менше (критерій);
-* Модифікований образ CFW PUP файлу на USB носії FAT32.
-
-Якшо моделі не були випущені пізніше 3.55 (Slim і Super Slim моделі), то на такі
-консолі можна поставили лише HFW + HEN образи.
-
-Функція | CFW | HFW
---- | --- | ---
-Застосовуваність|Моделі з 3.55|Будь-які
-Homebrew|Повна|HEN
-Backup|Повна (ISO/PKG)|Обмежена (HEN)
-DEX|CEX/DEX переключення|CEX
-Cobra|Так|HEN
-Ban|Малоймовірно|Високоймовірно
-Простота|Складно|Простіше
-Остання версія|4.86|4.90
-
-Основні переваги CFW (Rebug):
-
-* Підтрика DEX функцій
-* Підтрика розширений дороблених емуляторів PS2 і PS1
-* Підтрика BD в UDF форматі або у вигляді каталогів
-* Відключення певних OS API syscalls
-* Підтримка бекапа ігор і системи
-
-Останні версії CWF (Rebug):
-
-* Rebug 4.86.1 LITE для ретейл PS3 (CEX)
-* Rebug 4.86.1 REX/D-REX для DevKit (CEX/DEX)
+How to pack ELF into PKG into PUP:
