@@ -28,24 +28,24 @@ License ("GPL") version 3, as published by the Free Software Foundation.
 #define USAGE_STRING "ps3xport v" PS3XPORT_VERSION "\n"                 \
   "  Usage: %s command [argument ...] [command ...]\n"                  \
   "    Commands : \n"                                                   \
-  "\t  SetKeysFile filename:                          Set the path to the keys.conf file  (default: keys.conf)\n"            \
-  "\t  SetDeviceID (HEX|filename):                    Set the DeviceID needed for decrypting archive2.dat\n"                 \
-  "\t  SetPSID (HEX|filename):                        Set the OpenPSID needed for creating new backups\n"                    \
-  "\t  ExtractPSID backup_dir output:                 Extract the OpenPSID from a backup directory\n"                        \
-  "\t  ReadIndex archive.dat:                         Parse the specified index file and print info\n"                       \
-  "\t  ReadData archive_XX.dat:                       Parse the specified data file and print info\n"                        \
-  "\t  Decrypt archive[_XX].dat dcrptd.dat:           Decrypt the given .dat file\n"                                         \
-  "\t  Dump backup_dir destination_dir:               Extract the whole backup to the destination directory\n"               \
-  "\t  ExtractFile backup_dir filename dest:          Extract from a backup a specific file\n"                               \
-  "\t  ExtractPath backup_dir path dest_dir:          Extract from a backup all files matching the specified path\n"         \
-  "\t  DeleteFile backup_dir filename:                Delete from a backup a specific file\n"                                \
-  "\t  DeletePath backup_dir path:                    Delete from a backup all files matching the specified path\n"          \
-  "\t  DeleteProtected backup_dir:                    Deletes the copy-protected files from the backup\n"                    \
-  "\t  Add backup_dir directory:                      Add the given directory and subdirs to the backup\n"                   \
-  "\t  AddProtected backup_dir directory:             Add the given directory and subdirs to the copy-protected backup\n"    \
-  "\t  CreateBackup backup_dir content prot_content:  Create a new backup with a content dir and a copy-protected content\n" \
+  "  SetKeysFile filename:                          Set the path to the keys.conf file  (default: keys.conf)\n"            \
+  "  SetDeviceID (HEX|filename):                    Set the DeviceID needed for decrypting archive2.dat\n"                 \
+  "  SetPSID (HEX|filename):                        Set the OpenPSID needed for creating new backups\n"                    \
+  "  ExtractPSID backup_dir output:                 Extract the OpenPSID from a backup directory\n"                        \
+  "  ReadIndex archive.dat:                         Parse the specified index file and print info\n"                       \
+  "  ReadData archive_XX.dat:                       Parse the specified data file and print info\n"                        \
+  "  Decrypt archive[_XX].dat dcrptd.dat:           Decrypt the given .dat file\n"                                         \
+  "  Dump backup_dir destination_dir:               Extract the whole backup to the destination directory\n"               \
+  "  ExtractFile backup_dir filename dest:          Extract from a backup a specific file\n"                               \
+  "  ExtractPath backup_dir path dest_dir:          Extract from a backup all files matching the specified path\n"         \
+  "  DeleteFile backup_dir filename:                Delete from a backup a specific file\n"                                \
+  "  DeletePath backup_dir path:                    Delete from a backup all files matching the specified path\n"          \
+  "  DeleteProtected backup_dir:                    Deletes the copy-protected files from the backup\n"                    \
+  "  Add backup_dir directory:                      Add the given directory and subdirs to the backup\n"                   \
+  "  AddProtected backup_dir directory:             Add the given directory and subdirs to the copy-protected backup\n"    \
+  "  CreateBackup backup_dir content prot_content:  Create a new backup with a content dir and a copy-protected content\n" \
   "\n" \
-  "\t\t    Set the content path to '-' to ignore it\n\n"
+  "        Set the content path to '-' to ignore it\n\n"
 
 static void
 archive_print_dir (ArchiveDirectory *dir, char *prefix)

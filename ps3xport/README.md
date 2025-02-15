@@ -1,5 +1,5 @@
 PS3 Export: backup manipulation utility
----------------------------------------
+=======================================
 
 `ps3xport` is a utility for manipulating PS3 backup archives. It can create a fully working backup from scratch,
 as well as extract files from existing backups or rename, delete, or add new files to an existing backup.
