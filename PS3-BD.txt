@@ -2744,9 +2744,9 @@ EU · BLES-02241 · Odin Sphere: Leifthrasir
 JP · BLJM-61239 · Odin Sphere: Leifthrasir
 US · BLUS-31601 · Odin Sphere: Leifthrasir
 EU · BLES-01586 · Of Orcs and Men
-EU · BCED---000 · Official PlayStation Magazine Issue 07: July 2007
+EU · BCED-00083 · Official PlayStation Magazine Issue 07: July 2007
 EU · BCED-00084 · Official PlayStation Magazine Issue 08: August 2007
-EU · BCED---000 · Official PlayStation Magazine Issue 09: September 2007
+EU · BCED-00085 · Official PlayStation Magazine Issue 09: September 2007
 EU · BCED-00086 · Official PlayStation Magazine Issue 10: October 2007
 EU · BCED-00087 · Official PlayStation Magazine Issue 11: November 2007
 EU · BCED-00088 · Official PlayStation Magazine Issue 12: December 2007

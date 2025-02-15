@@ -1,0 +1,40 @@
+Installing Rebug 4.86 (or Any CFW) Using 3.55 Keys
+
+This process applies to fully hackable PS3 models (CECH-25XX or older)
+and leverages the 3.55 private keys to install custom firmware.
+
+Step 1: Understanding the Role of 3.55 Keys
+
+* Sony signs firmware updates with private keys, which ensure only official firmware (OFW) can be installed.
+* The 3.55 keys were leaked, allowing custom firmware (CFW) to be signed in a way that the PS3 accepts as "legit."
+* However, later firmware (like 4.86) uses stronger encryption, so direct installation is blocked.
+
+Step 2: Downgrading to 3.55 (If Needed)
+
+* Option 1: Use a hardware flasher (E3 Flasher, Teensy, Progskeet) to downgrade to 3.55.
+* Option 2: If on OFW 4.82 – 4.90, use PS3Xploit to install a hybrid firmware (HFW) and enable Flash Writer to allow CFW installation.
+
+Step 3: Patching the Core OS (Using 3.55 Keys)
+
+* Official PS3 firmware updates are encrypted and signed using Sony's private keys.
+* CFW developers (like Rebug) decrypt the firmware using known keys (3.55) and re-sign it with the same keys, allowing it to be installed on any PS3 that accepts 3.55-signed packages.
+* Tools like scetool, fail0verflow's tools, or MFW Builder can be used to manually patch the firmware.
+* CoreOS, lv1/lv2 (Hypervisor & Kernel), and selfs (executables) are modified to allow: 1) Homebrew execution; 2) Disabling signature checks; 3) Debugging/developer tools (DEX).
+
+Step 4: Installing Rebug 4.86 via the PS3 Recovery Menu
+
+* Download Rebug 4.86.1 CFW (.PUP file).
+* Format a USB drive to FAT32 and create a folder
+* Place the Rebug .PUP file inside and rename it to PS3UPDAT.PUP
+* Boot the PS3 into Recovery Mode (Safe Mode).
+  Turn off the PS3, then hold the power button until it turns off.
+  Hold the power button again until you hear two beeps, then release.
+* Select System Update and install the Rebug firmware.
+
+Step 5: Verifying the Installation & Unlocking Full Features
+
+* After the install, the PS3 will boot into Rebug CFW.
+* To enable full debugging tools, install Rebug Toolbox.
+* Optional: Enable Cobra Mode for extra features (ISO loading, PSP/PS2 support).
+* Now, homebrew and backup managers (like Multiman or Webman) can be installed.
+
