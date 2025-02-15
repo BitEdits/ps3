@@ -5,16 +5,16 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 
 # TOC
 
-* 00) Intro
-* 01) SCE PS3 SDK
-* 02) Open Source PS3 Light SDK
-* 03) T2 SDE Linux
-* 04) RPCS3 Emulator
-* 05) RSX Driver for X.org
-* 06) OpenGL driver for RSX
-* 07) BD Ripping
-* 08) PUP/PKG packing/unpacking
-* 10) Homebrew Games
+* Intro
+* SCE PS3 SDK
+* Open Source PS3 Light SDK
+* T2 SDE Linux
+* RPCS3 Emulator
+* RSX Driver for X.org
+* OpenGL driver for RSX
+* BD Ripping
+* PUP/PKG packing/unpacking
+* Homebrew Games
 
 # Intro
 
@@ -53,7 +53,6 @@ PS3 здобула культовий статус серед науковців
 освітню мету без комерційного інтересу, не створюють юридичних ризиків.
 
 # SCE PS3 SDK
---------------
 
 Якшо вам пощастило отримати офіційний DevKit, то у вас має бути в комплекті
 офіційне SDK, яке складається умовно з публічних і непублічних документів.
