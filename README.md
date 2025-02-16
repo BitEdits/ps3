@@ -55,11 +55,11 @@ PS3 здобула культовий статус серед науковців
 
 # SCE PS3 SDK
 
-PS3 SCE SDK описано у відповідному файлі: <a href="PS3-SDK.md">PS3-SDK.md</a>.
+Огляд PS3 SDK надано у відповідному файлі: <a href="PS3-SDK.md">PS3-SDK.md</a>.
 
-# PS3 Firmwares
+# PS3 Firmware
 
-PS3 Firmwares описано у відповідному файлі: <a href="PS3-FW.md">PS3-FW.md</a>.
+Види і перелік PS3 Firmware надані у відповідному файлі: <a href="PS3-FW.md">PS3-FW.md</a>.
 
 # PS3 Emulation of PS2 and PS1
 
