@@ -6,12 +6,13 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 # TOC
 
 * Intro
-* SCE PS3 SDK
+* PS3 SDK
 * PS3 Firmware
 * PS3 Emulation of PS2 and PS1
 * RPCS3 Emulator
-* BD Ripping
-* PUP/PKG packing/unpacking for 3.55
+* Пакетування програмного забезпечення PUP/PKG/SELF 3.55
+* Бекап SSD
+* Клонування BD 
 * Open Source PS3 Light SDK
 * RSX Driver for X.org
 * OpenGL driver for RSX
