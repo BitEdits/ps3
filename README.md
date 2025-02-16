@@ -6,6 +6,7 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 # TOC
 
 * Intro
+* PS3 Models
 * PS3 SDK
 * PS3 Firmware
 * PS3 Emulation of PS2 and PS1
@@ -54,7 +55,9 @@ PS3 здобула культовий статус серед науковців
 Наукові дослідження, що базуються на відкритих джерелах і мають виключно
 освітню мету без комерційного інтересу, не створюють юридичних ризиків.
 
-# SCE PS3 SDK
+# PS3 Models
+
+# PS3 SDK
 
 Огляд PS3 SDK надано у відповідному файлі: <a href="PS3-SDK.md">PS3-SDK.md</a>.
 
