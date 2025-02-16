@@ -1,5 +1,5 @@
-PS3 Firmwares
-=============
+PS3 Firmware
+============
 
 # Зміст
 
@@ -14,7 +14,7 @@ PS3 Firmwares
 
 Цей документ описує види PS3 Firmwares, дає їх перелік та показує як робити downgrade.
 
-# Види Firmwares
+# Види Firmware
 
 Існує два можливі способи для homebrew під PS3:
 

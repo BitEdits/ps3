@@ -6,12 +6,14 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 # TOC
 
 * Intro
-* SCE PS3 SDK
-* PS3 Firmwares
+* PS3 Models
+* PS3 SDK
+* PS3 Firmware
 * PS3 Emulation of PS2 and PS1
 * RPCS3 Emulator
-* BD Ripping
-* PUP/PKG packing/unpacking for 3.55
+* Пакетування PUP/PKG/SELF ключами OFW 3.55
+* Бекап SSD
+* Клонування BD 
 * Open Source PS3 Light SDK
 * OpenGL driver for RSX
 * RSX Driver for X.org
@@ -53,21 +55,39 @@ PS3 здобула культовий статус серед науковців
 Наукові дослідження, що базуються на відкритих джерелах і мають виключно
 освітню мету без комерційного інтересу, не створюють юридичних ризиків.
 
-# SCE PS3 SDK
+# PS3 Models
 
-PS3 SCE SDK описано у відповідному файлі: <a href="PS3-SDK.md">PS3-SDK.md</a>.
+# PS3 SDK
 
-# PS3 Firmwares
+Огляд PS3 SDK надано у відповідному файлі: <a href="PS3-SDK.md">PS3-SDK.md</a>.
 
-PS3 Firmwares описано у відповідному файлі: <a href="PS3-FW.md">PS3-FW.md</a>.
+# PS3 Firmware
+
+Види і перелік PS3 Firmware надані у відповідному файлі: <a href="PS3-FW.md">PS3-FW.md</a>.
 
 # PS3 Emulation of PS2 and PS1
 
 Про підтримку PS1 і PS2 ігор в Core OS на PS3 читайте у відповідному файлі: <a href="PS3-EMU.md">PS3-EMU.md</a>.
 
-# PUP/PKG packing/unpacking for 3.55
+# Пакетування PUP/PKG/SELF ключами від OFW 3.55
 
-Пакет програм
+Пакет програм `ps3tools` містить наступні програми:
+
+* `puppack` — утиліта запаковки Firmware (PUP).
+* `pupunpack` — утиліта розпаковки Firmware (PUP).
+* `cosunpkg` — утиліта розкодування SCE пакетів.
+* `cospkg` — утиліта кодування SCE пакетів.
+* `pkg` — утиліта запаковки PKG файлів.
+* `unpkg` — утиліта розпаковки PKG файлів.
+* `makeself` — утиліта запаковки ELF файлів в підписні SELF конверти.
+* `unself` — утиліта розпаковки ELF файлів з підписних конвертів SELF.
+* `scekrit` — утиліта обчислення похідних ключів. 
+* `sceverify` — утиліта ECDSA перевірка цифрового підпису. 
+
+Кожна з цих програм використовує ключі, які знаходяться в папці `~/.ps3/`.
+
+NOTE: Альтернативно до пакету програм `ps3tools` можна використовувати утиліту `ps3sce`, яка
+подібна на оригінальну `scetool` яка йшла з SCE SDK, конфігурація ключів в цій утіліті задається по-іншому.
 
 PS3UPDAT.PUP:
 
@@ -177,3 +197,7 @@ or simply:
 ```
 
 How to pack ELF into PKG into PUP:
+
+# Бекап SSD
+
+Бекап SSD здійснюєтся за допомогою утиліти `ps3xport`.
