@@ -7,7 +7,7 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 
 * Intro
 * SCE PS3 SDK
-* PS3 Firmwares
+* PS3 Firmware
 * PS3 Emulation of PS2 and PS1
 * RPCS3 Emulator
 * BD Ripping
