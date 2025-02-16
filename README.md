@@ -10,7 +10,7 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 * PS3 Firmware
 * PS3 Emulation of PS2 and PS1
 * RPCS3 Emulator
-* Пакетування програмного забезпечення PUP/PKG/SELF 3.55
+* Пакетування PUP/PKG/SELF ключами OFW 3.55
 * Бекап SSD
 * Клонування BD 
 * Open Source PS3 Light SDK
@@ -66,7 +66,7 @@ PS3 здобула культовий статус серед науковців
 
 Про підтримку PS1 і PS2 ігор в Core OS на PS3 читайте у відповідному файлі: <a href="PS3-EMU.md">PS3-EMU.md</a>.
 
-# PUP/PKG packing/unpacking for 3.55
+# Пакетування PUP/PKG/SELF ключами від OFW 3.55
 
 Пакет програм
 
@@ -178,3 +178,7 @@ or simply:
 ```
 
 How to pack ELF into PKG into PUP:
+
+# Бекап SSD
+
+Бекап SSD здійснюєтся за допомогою утиліти `ps3xport`.
