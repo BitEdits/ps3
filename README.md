@@ -13,8 +13,8 @@ PlayStation 3 Hacking Memorandum by Bit Edits.
 * BD Ripping
 * PUP/PKG packing/unpacking for 3.55
 * Open Source PS3 Light SDK
-* RSX Driver for X.org
 * OpenGL driver for RSX
+* RSX Driver for X.org
 * T2 SDE Linux
 
 # Intro
