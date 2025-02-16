@@ -61,6 +61,10 @@ PS3 SCE SDK описано у відповідному файлі: <a href="PS3-
 
 PS3 Firmwares описано у відповідному файлі: <a href="PS3-FW.md">PS3-FW.md</a>.
 
+# PS3 Emulation of PS2 and PS1
+
+Про підтримку PS1 і PS2 ігор в Core OS на PS3 читайте у відповідному файлі: <a href="PS3-EMU.md">PS3-EMU.md</a>.
+
 # PUP/PKG packing/unpacking for 3.55
 
 Пакет програм
