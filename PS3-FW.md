@@ -1,7 +1,7 @@
 PS3 Firmwares
 =============
 
-Зміст:
+# Зміст
 
 * Види Firmwares
 * Installing CFW Using 3.55 Keys

@@ -1,7 +1,7 @@
 PS3 Emulation of PS2 and PS1
 ============================
 
-TOC:
+# TOC
 
 * PS3 Models That Include ps2_emu.self Backward-Compatible (BC) Models
 * Non-Backward-Compatible (Non-BC) Models
